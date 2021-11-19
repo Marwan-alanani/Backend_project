@@ -1,0 +1,43 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div{
+    position: absolute;
+    top: 31%;
+    left: 8%;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+
+}
+input{
+    flex-basis: 20% ;
+    margin-top: 15px;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-width: 0 0 1px;
+}
+.submit{
+    border-width: 1px 1px 1px 1px;
+    background-color: dimgrey;
+    color: white;
+}
+div a{
+    position: absolute;
+    margin-top: 15px ;
+    margin-left: 42px;
+    text-decoration: none;
+    color: gray;
+}
+div a:hover{
+    color: black;
+}
+div .register{
+margin-left: 184px;
+}
