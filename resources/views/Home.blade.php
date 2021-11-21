@@ -48,10 +48,12 @@
         </a>
     </form>
         <ul id="suggestions" class="hidden">
+            @if(isset($suggestions))
             @if ($suggestions!==[])
             @foreach ($suggestions as $suggestion)
             <li  class="hidden {{ $suggestion }}">{{ $suggestion }}</li>
             @endforeach
+            @endif
             @endif
         </ul>
     </div>
@@ -110,6 +112,7 @@
         </div>
     </section>
     {{-- trends --}}
+    @if(isset($HomeTrends))
     @if($HomeTrends !== [])
     @if (isset($HomeTrends[0]))
     <section id="trends">
@@ -158,7 +161,9 @@
     </section>
     @endif
     @endif
+    @endif
     {{-- browse --}}
+    @if(isset($HomeFeatured))
     @if($HomeFeatured!==[])
     @if (isset($HomeFeatured[0]))
     <section id="browse">
@@ -194,6 +199,7 @@
             <a class="float-right" href="">View All</a>
         </div>
     </section>
+    @endif
     @endif
     @endif
     {{-- Sale --}}
@@ -242,7 +248,7 @@
             })
         })
     })
-       
+
     </script>
 </body>
 
